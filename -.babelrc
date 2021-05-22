@@ -65,6 +65,13 @@
   "presets": [
     ["@babel/env", {
       "modules": false,
+			"targets": {
+				"browsers": [
+					"last 2 versions",
+					"ie >= 10"
+				]
+			},
+			"corejs": "3.12.1",
       "useBuiltIns": "usage"
     }]
   ],

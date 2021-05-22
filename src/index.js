@@ -1,6 +1,6 @@
+
 import "./styles.css";
-import "./styles.scss";
-console.log("hello world!");
+import 'babel-polyfill'
 
 
 async function getPosts() {
