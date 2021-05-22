@@ -1,0 +1,78 @@
+// {
+//   presets: [
+    // [
+    //   '@babel/preset-env',
+    //   {
+    //     modules: false
+    //   }
+    // ]
+//   ]
+// }
+
+// {
+// "plugins": [
+// 	[
+// 		"env",
+// 		{
+// 			"useBuiltIns": "entry",
+// 			"targets": {
+// 				"esmodules": true
+// 			}
+// 		}
+// 	],
+	// ["@babel/plugin-transform-runtime",
+	// 	{
+	// 		"regenerator": true
+	// 	}
+	// ]
+// ],
+// }
+
+// {
+//   "presets": [
+//     ["env", {
+// 			"useBuiltIns": "entry",
+//       "targets": {
+//         "browsers": [ ">0.25%", "not ie 10", "not op_mini all"]
+//       }
+//     }]
+//   ]
+// }
+
+// {
+//   "presets": [
+//     ["env", {
+// 			"useBuiltIns": "entry",
+//       "targets": {
+//         "chrome": 52,
+//         "browsers": [ ">0.25%", "not ie 10", "not op_mini all"]
+//       }
+//     }]
+//   ]
+// }
+
+
+// {
+//   "presets": [
+//     ["@babel/env", {
+//       "modules": false
+//     }]
+//   ]
+// }
+
+
+{
+  "presets": [
+    ["@babel/env", {
+      "modules": false,
+      "useBuiltIns": "usage"
+    }]
+  ],
+	"plugins": [
+		["@babel/plugin-transform-runtime",
+			{
+				"regenerator": true
+			}
+		]
+	]
+}
