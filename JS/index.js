@@ -1,7 +1,7 @@
-import 'babel-polyfill'
+// import 'babel-polyfill'
 
 
-async function getPosts() {
+export async function getPosts() {
 	const response = await fetch('https://jsonplaceholder.typicode.com/posts')
 	const posts = await response.json();
 
@@ -9,8 +9,5 @@ async function getPosts() {
 	document.getElementById('posts').innerHTML = res
 }
 
- function init() {
-		getPosts()
-}
 
-init()
+getPosts()
