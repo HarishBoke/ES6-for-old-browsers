@@ -5,12 +5,17 @@
   "keywords": [],
   "author": "Harish Boke",
   "license": "ISC",
+  "main": "dist/main/index.html",
+  "module": "dist/module/index.html",
+  "browser": "dist/browser/index.html",
   "scripts": {
     "clean": "rm dist/bundle.js",
     "start": "parcel serve index.html",
     "build": "parcel build index.html"
   },
   "dependencies": {
+    "@parcel/transformer-babel": "^2.0.0-alpha.3",
+    "@parcel/transformer-js": "^2.0.0-alpha.3",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.26.0",
     "babel-runtime": "^6.26.0",
@@ -30,10 +35,8 @@
     "prettier": "^2.3.0",
     "sass": "^1.34.0"
   },
-  "browserslist": [
-    "> 1%"
-  ],
-	"targets": {
+  "browserslist": "> 0.2%",
+  "targets": {
     "main": {
       "engines": {
         "node": ">=4.x"
@@ -46,7 +49,10 @@
     },
     "browser": {
       "engines": {
-        "browsers": ["> 1%", "not dead"]
+        "browsers": [
+          "> 1%",
+          "not dead"
+        ]
       }
     }
   }
